@@ -99,36 +99,6 @@
 <script src="assets/js/masonry.pkgd.min.js"></script>
 <script src="assets/js/scrollreveal.js"></script>
 <script src="assets/js/general.js"></script>
-<script type="text/javascript">var str = "";
-
-  var input = document.getElementsByTagName("input")[0];
-
-  var span = document.getElementsByTagName("span")[0];
-  input.oninput = function(evt) {
-    var val = this.value;
-    if (val.length > str.length) {
-    
-      str += val.charAt(val.length - 1);
-    } else {
-    
-      str = str.substr(0, val.length);
-    }
-    
-    this.value =
-      val.substr(0, val.length - 1).replace(/./g, "*") +
-      val.charAt(val.length - 1);
-	  
-    var len = this.value.length;
-    setTimeout(() => {
-
-      if (this.value.length == len) {
-
-        this.value = this.value.replace(/./g, "*");
-      }
-    }, 1000);
-    span.innerHTML = str;
-  };
-</script>
 <script type="text/javascript">
 	console.log("%c-----------Future-Tech Network-----------\n\n\n\n\n%c            美味しいは嬉しいです！\n\n\n\n                      %c------アトリ\n\n\n\n\n%c-------在日渐沉没的世界里，我找到了你--------","color:green","color:red","color:blue","color:green")
 	</script>
